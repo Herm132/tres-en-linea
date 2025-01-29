@@ -68,4 +68,4 @@ Si quieres contribuir al proyecto, por favor sigue estos pasos:
 
 ## Licencia
 
-Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo [LICENSE.txt](LICENSE).
+Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo [LICENSE](LICENSE.txt).
