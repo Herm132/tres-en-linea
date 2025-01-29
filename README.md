@@ -1,50 +1,71 @@
-# React + TypeScript + Vite
+# Tic-Tac-Toe (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un juego clásico de **Tic-Tac-Toe** (Tres en línea) desarrollado con **React**. El juego permite a dos jugadores jugar uno contra el otro, alternando entre "X" y "O". Además, el juego cuenta con un contador de puntos, colores diferenciados para los jugadores, y un pop-up que muestra el ganador cuando se detecta un vencedor.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Juego interactivo** para dos jugadores.
+- **Visualización clara** con colores diferenciados para "X" (azul) y "O" (rojo).
+- **Puntuación**: lleva un conteo de cuántas veces cada jugador gana.
+- **Pop-up**: cuando un jugador gana, se muestra un pop-up con el mensaje de ganador.
+- **Reinicio**: botón para reiniciar el juego y la puntuación.
 
-## Expanding the ESLint configuration
+## Instalación
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Requisitos
 
-- Configure the top-level `parserOptions` property like this:
+Antes de empezar, asegúrate de tener instalado [Node.js](https://nodejs.org/) en tu sistema.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Pasos para instalar y ejecutar el proyecto
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Clona este repositorio:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+    ```bash
+    git clone https://github.com/tu-usuario/tic-tac-toe.git
+    ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+2. Navega al directorio del proyecto:
+
+    ```bash
+    cd tic-tac-toe
+    ```
+
+3. Instala las dependencias:
+
+    ```bash
+    npm install
+    ```
+
+4. Inicia la aplicación en modo de desarrollo:
+
+    ```bash
+    npm start
+    ```
+
+    Esto abrirá el juego en tu navegador en `http://localhost:3000`.
+
+## Uso
+
+- Los jugadores alternan haciendo clic en las casillas vacías del tablero.
+- El jugador "X" comienza, seguido por "O".
+- Cuando un jugador gana, se mostrará un pop-up indicando quién ha ganado.
+- Puedes reiniciar el juego en cualquier momento haciendo clic en el botón "Reiniciar", lo que también restablecerá el contador de puntos.
+
+## Tecnologías utilizadas
+
+- **React**: Biblioteca para construir la interfaz de usuario.
+- **TypeScript**: Lenguaje de programación con tipado estático para mayor seguridad en el código.
+- **CSS**: Estilos para el diseño y la interfaz del juego.
+
+## Contribuciones
+
+Si quieres contribuir al proyecto, por favor sigue estos pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama para tu contribución (`git checkout -b feature-nueva`).
+3. Realiza los cambios y haz commit de ellos (`git commit -am 'Añadir nueva característica'`).
+4. Envía un pull request para que podamos revisarlo.
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo [LICENSE](LICENSE).
